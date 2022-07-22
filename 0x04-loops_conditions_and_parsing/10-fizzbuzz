@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# fizzbuzz jizz
+i=1
+while [ $i -le 100 ] ;
+do
+if ((i % 3 == 0 && i % 5 == 0)) ;
+then
+echo fizbuzz
+elif ((i % 3 == 0)) ;
+then
+echo fizz
+elif ((i % 5 == 0)) ;
+then
+echo buzz
+else
+echo $i
+fi
+((i += 1))
+done
