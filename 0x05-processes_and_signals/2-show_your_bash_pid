@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# displays line with bash
+ps -auxf | grep bash
