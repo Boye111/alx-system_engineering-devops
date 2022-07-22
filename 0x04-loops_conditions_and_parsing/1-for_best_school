@@ -2,5 +2,8 @@
 # For loop statement
 for i in {1..10}
 do
-echo "Best School"
+	if [ $i -le 10 ]
+	then
+		echo "Best School"
+	fi
 done
