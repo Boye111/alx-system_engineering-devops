@@ -3,5 +3,5 @@
 current_content=$(ls)
 for i in $current_content ;
 do
-echo $i | cut -d'-' -f2
+echo "$i" | cut -d'-' -f2
 done
