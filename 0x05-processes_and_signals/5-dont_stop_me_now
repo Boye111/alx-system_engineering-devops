@@ -1,4 +1,4 @@
-#!/usr/in/env bash
+#!/usr/bin/env bash
 # killsthe process
 Chi=$(pgrep -f 4-to_infinity_and_beyond)
 kill Chi
