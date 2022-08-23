@@ -1,0 +1,19 @@
+https://imgur.com/KJ5Wal7
+
+3 Firewalls: The first Firewall checks the rules after receiving the requests and could deny following requests. The second firewall is working in the server to prevent someone hacking depending of the requests, and the third firewall acts as a circuit-level firewalls, inspect the transaction of the information.
+
+SSL certificate: 1 SSL certificate: is added to secure https protocols and encrypt communication.
+
+3 monitoring clients: 2 monitoring deployed in each master-server, and one monitoring client for the load balancer. This will help understand the metrics of the performance of the resources according to the users requests.
+
+Firewalls is a network security device that monitors network traffic, it can be understood as a division or “wall” between a private network and public network which limits and blocks network traffic based on a set of security rules in the hardware or software by analyzing data packets that request entry to the network.
+
+the traffic is served in order to bring protection by using the secure port 443, which encrypts outgoing information. Then it is more difficult to spy or get access to the site’s information.
+
+Monitoring is practice used for quality control. monitoring not only helps to make sure to maintain high quality levels, keeping the established standards and consistency, but also to help in the continuous improvement of the resources performance.
+
+Queries per second is a measure of the rate of traffic going in a particular server serving a Web domain. It is an important metric to monitor, because it can help you decide whether to scale the server in order to cope with the demand of usage, and resource requirement so the web page won’t collapse in the future with overload server request.
+
+Terminating SSL at load balancer level is an issue because traffic will decrypt by load balance , f5 administrator may able to capture traffic also it will require ssl offloading license
+
+Another issue is having only one MYSQL server capable of accepting writes.

@@ -1,0 +1,21 @@
+https://imgur.com/a/PoEeWV1
+
+A server is a physical machine (as hardwares), virtual machine or software (computer programs) that serve or provide functionality to other programs or devices called clients
+
+The role of the domain name is to replace complex IP addresses numbers into easily understandable names so humans can remember and communicate them in a better way.
+
+DNS record of www belongs to a subdomain of the www.foobar.com
+
+The role of a Web server is to store the files of a site and broadcast them over the Internet so that they can be visited by users. 
+
+The role of the application server is to act as the intermediary between browser-based databases and back-end databases and legacy systems.
+
+The role of the database is to make the information gathered organized so it can be easily accessed, managed and updated.
+
+The server is using the HTTP (Hypertext Transfer Protocol), which enables the transfer of resource and data, such as HTML documents between the server and the client.
+
+One of the issues of having a simple web infrastructure, has to do with the SPOF (Single Point of Failure) where if component of the system fails, there is no backup that can support the continuity of the functionality of the system, bringing the whole system to a collapse by being unable to operate.
+
+Another issue with this infrastructure is that whenever some structure or node in the system needs to be repaired, the whole system has to be shut down, while the maintenance is done. Then, client requests cannot be attended during this period of time.
+
+Overload of traffic can be a risk to the server capacity. This, because there is no possibility to scale the service with additional servers as backup.
