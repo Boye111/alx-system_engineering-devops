@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Installs and configures HAproxy with version 1.5 or greater
+
+apt-get -y install haproxy
+
+server_config=\
+"
+frontend  Adeboye-alx_front
+	bind *:80
+	mode http
+	default_backend Adeboye-alx_back
+backend Boye-alx_back
+	balance roundrobin
+	server 26967-web-01 3.237.44.30
+	server 26967-web-02 3.93.74.110
+"
+echo "$server_config" >> /etc/haproxy/haproxy.cfg
+
+echo "ENABLED=1" >> /etc/default/haproxy
+
+
+sudo service haproxy restart
