@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Run nginx as the nginx user
+
+# Stop Apache processes
+pkill apache2
+
+# If port 80 for IPv4 is being listened to, it is changed to port 8080
+if grep -q "listen 80" /etc/nginx/sites-available/default ; then
+	sed -i "s/listen 80/listen 8080/" /etc/nginx/sites-available/default
+fi
+
+# If port 80 for IPv6 is being listened to, it is changed to port 8080
+if grep -q "listen \[::\]:80" /etc/nginx/sites-available/default ; then
+	sed -i "s/listen \[::\]:80/listen \[::\]:8080/" /etc/nginx/sites-available/default
+fi
+
+chown nginx:nginx /etc/nginx/nginx.conf
+
+chmod 0644 /etc/nginx/nginx.conf
+
+su nginx -c "service nginx start"
