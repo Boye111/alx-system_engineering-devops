@@ -15,7 +15,7 @@ if __name__ == '__main__':
     user_uri = '{api}/users/{id}'.format(api=api_url, id=emp_id)
     todo_uri = '{user_uri}/todos'.format(user_uri=user_uri)
 
-    #user response
+    # user response
     res = requests.get(user_uri).json()
 
     # Name of employee
