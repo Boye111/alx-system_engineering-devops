@@ -23,9 +23,9 @@ def top_ten(subreddit):
     else:
         res_json = response.json()
 
-         if res_json.get('data') and res_json.get('data').get('children'):
-             hot_posts = res_json.get('data').get('children')
+        if res_json.get('data') and res_json.get('data').get('children'):
+            hot_posts = res_json.get('data').get('children')
 
-             for post in hot_posts:
-                 if post.get('data') and post.get('data').get('title'):
-                     print(post.get('data').get('title'))
+            for post in hot_posts:
+                if post.get('data') and post.get('data').get('title'):
+                    print(post.get('data').get('title'))

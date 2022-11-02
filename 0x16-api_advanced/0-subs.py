@@ -11,7 +11,7 @@ def number_of_subscribers(subreddit):
     """ number of subscribers """
     base_url = 'https://www.reddit.com'
     api_uri = '{base}/r/{subreddit}/about.json'.format(base=base_url,
-                                                        subreddit=subreddit)
+                                                       subreddit=subreddit)
 
     user_agent = {'User-Agent': 'Python/requests'}
     response = requests.get(api_uri, headers=user_agent, allow_redirects=False)
